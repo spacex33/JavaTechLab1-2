@@ -1,0 +1,15 @@
+.background{
+    -fx-background-color: #FFD700;
+}
+.button{
+    -fx-font-style: italic;
+    -fx-font-size: 15px;
+}
+.radio-button{
+    -fx-font-size: 17px;
+    -fx-font-weight: 800;
+}
+.label{
+    -fx-font-weight: 800;
+    -fx-font-size: 20px;
+}

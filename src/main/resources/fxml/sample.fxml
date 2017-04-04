@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="593.0" prefWidth="600.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller">
+   <children>
+      <RadioButton fx:id="radioButton11" layoutX="114.0" layoutY="153.0" mnemonicParsing="false" selected="true">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="firstValue" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="radioButton12" layoutX="114.0" layoutY="192.0" mnemonicParsing="false" text="TRUE" toggleGroup="$firstValue">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="radioButton13" layoutX="114.0" layoutY="230.0" mnemonicParsing="false" text="FALSE" toggleGroup="$firstValue">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="radioButton21" layoutX="368.0" layoutY="153.0" mnemonicParsing="false" selected="true">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="secondValue" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="radioButton22" layoutX="368.0" layoutY="192.0" mnemonicParsing="false" text="TRUE" toggleGroup="$secondValue">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="radioButton23" layoutX="368.0" layoutY="230.0" mnemonicParsing="false" text="FALSE" toggleGroup="$secondValue">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </RadioButton>
+      <Label fx:id="label" alignment="CENTER" layoutX="193.0" layoutY="69.0" prefHeight="84.0" prefWidth="176.0" textAlignment="CENTER" textOverrun="CLIP">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button id="btn01" fx:id="btn01" layoutX="28.0" layoutY="294.0" mnemonicParsing="false" onAction="#onClickMethod1" prefHeight="50.0" prefWidth="165.0" text="Конъюнкция (И)">
+         <font>
+            <Font size="16.0" />
+         </font></Button>
+      <Button id="btn02" fx:id="btn02" layoutX="210.0" layoutY="294.0" mnemonicParsing="false" onAction="#onClickMethod2" prefHeight="50.0" prefWidth="165.0" text="Дизьюнкция (ИЛИ)">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Button id="btn03" fx:id="btn03" layoutX="392.0" layoutY="294.0" mnemonicParsing="false" onAction="#onClickMethod3" prefHeight="50.0" prefWidth="165.0" text="Штрих Шеффера">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Button id="btn04" fx:id="btn04" layoutX="28.0" layoutY="362.0" mnemonicParsing="false" onAction="#onClickMethod4" prefHeight="50.0" prefWidth="165.0" text="Стрелка Пирса">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Button id="btn05" fx:id="btn05" layoutX="210.0" layoutY="362.0" mnemonicParsing="false" onAction="#onClickMethod5" prefHeight="50.0" prefWidth="165.0" text="XNOR">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Button id="btn06" fx:id="btn06" layoutX="392.0" layoutY="362.0" mnemonicParsing="false" onAction="#onClickMethod6" prefHeight="50.0" prefWidth="165.0" text="XOR">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Button id="btn07" fx:id="btn07" layoutX="28.0" layoutY="432.0" mnemonicParsing="false" onAction="#onClickMethod7" prefHeight="50.0" prefWidth="165.0" text="Импликац. от A к B">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Button id="btn08" fx:id="btn08" layoutX="210.0" layoutY="432.0" mnemonicParsing="false" onAction="#onClickMethod8" prefHeight="50.0" prefWidth="165.0" text="Импликац. от B к A">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Button id="btn09" fx:id="btn09" layoutX="392.0" layoutY="432.0" mnemonicParsing="false" onAction="#onClickMethod9" prefHeight="50.0" prefWidth="165.0" text="Декремент">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Button id="btn10" fx:id="btn10" layoutX="28.0" layoutY="500.0" mnemonicParsing="false" onAction="#onClickMethod10" prefHeight="50.0" prefWidth="530.0" text="Инкремент">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <ImageView fx:id="image" fitHeight="141.0" fitWidth="165.0" layoutX="210.0" layoutY="122.0" pickOnBounds="true" preserveRatio="true" visible="false" />
+   </children>
+   <styleClass>
+      <String fx:value="background" />
+      <String fx:value="button" />
+   </styleClass>
+</Pane>
